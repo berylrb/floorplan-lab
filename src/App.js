@@ -1,25 +1,22 @@
 import './App.css';
 import Kitchen from './Kitchen';
+import Bedroom from './Bedroom';
+import LivingRoom from './LivingRoom';
+import Bath from './Bath';
 
-const floorplanStyle = {
-  border: '2px solid rgb(27, 232, 243)',
-  height: '50vh',
-  width: '50vw',
-  padding: '12px',
-}
 
-const kitchenStyle = {
-  border: '2px solid rgb(126, 126, 251)',
-  padding: '1px 26px',
-  textAlign: 'center',
-};
+
+
 
 function App() {
+
   return (
-    <div style={floorplanStyle} className="App">
-        <div style={kitchenStyle}>
+    <div className="App">
         <Kitchen  />
-      </div>
+        <Bedroom bedNum={1} />
+        <Bedroom bedNum={2} />
+        <Bedroom bedNum={3} />
+        <LivingRoom />
     </div>
   );
 }
