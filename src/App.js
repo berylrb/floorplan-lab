@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Kitchen from './Kitchen';
+
+const floorplanStyle = {
+  border: '2px solid rgb(27, 232, 243)',
+  height: '50vh',
+  width: '50vw',
+  padding: '12px',
+}
+
+const kitchenStyle = {
+  border: '2px solid rgb(126, 126, 251)',
+  padding: '1px 26px',
+  textAlign: 'center',
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={floorplanStyle} className="App">
+        <div style={kitchenStyle}>
+        <Kitchen  />
+      </div>
     </div>
   );
 }
