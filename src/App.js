@@ -13,9 +13,11 @@ function App() {
   return (
     <div className="App">
         <Kitchen  />
+        <Bath size="Half" />
         <Bedroom bedNum={1} />
         <Bedroom bedNum={2} />
         <Bedroom bedNum={3} />
+        <Bath size="Full" />
         <LivingRoom />
     </div>
   );

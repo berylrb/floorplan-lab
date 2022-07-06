@@ -1,9 +1,12 @@
 const Bath = (props) => {
-  <>
-    <div className="Bath" id={`bath-${props.size}`}>
-      <h3>{props.size} Bath</h3>
-    </div>
-  </>
+  return (
+    <>
+      <div className="Bath" id={`bath-${props.size}`}>
+        {props.size} Bath
+      </div>
+    </>
+  )
 }
+
 
 export default Bath
