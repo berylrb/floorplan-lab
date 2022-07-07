@@ -1,97 +1,144 @@
-html, body {
-  height: 100%;
-  width: 100%;
-  font: 1rem sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+html {
+  font-family: sans-serif;
+  box-sizing: border-box;
   /* color:  */
 }
 
-.App {
+* {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+.app {
   border: 2px solid rgb(27, 232, 243);
   height: 70vh;
   width: 90vw;
-  padding: 10px;
   display: flex;
   flex-direction: column;
 }
 
-
-.Kitchen {
-  border: 2px solid rgb(126, 126, 251);
-  padding-left: 20vw;
-  padding-right: 20vw;
-  text-align: center;
-  background-color: rgb(237, 233, 227);
-  width: 4.3%;
-  height: 33%;
+.centered-flex {
   display: flex;
-  position: relative;
+  align-items: center;
+  justify-content: center;
 }
 
-.Oven {
+#k-hb {
+  height: 30%;
+  width: 100%;
+}
+
+#everything-else {
+  height: 70%;
+  width: 100%;
+  display: flex;
+}
+
+#kitchen {
+  border: 2px solid rgb(126, 126, 251);
+  background-color: rgba(126, 126, 251, .5);
+  width: 75%;
+  height: 100%;
+}
+
+#kitchen > * {
+  margin-left: auto;
+}
+
+#kitchen-stuff {
+  height: 100%;
+  min-width: 50px;
+  max-width: 100px;
+  width: 10%;
+}
+
+#kitchen-stuff > div {
+  height: 50%;
+  width: 100%;
+}
+
+#bath-half {
+  width: 25%;
+  height: 100%;
+}
+
+#everything-else {
+  height: 70%;
+  width: 100%;
+  display: flex;
+}
+
+#lr-b1-b2 {
+  width: 70%;
+  height: 100%;
+  flex-direction: column;
+}
+
+#lr-b1-b2 > div {
+  height: 50%;
+}
+
+#b1-b2 {
+  display: flex;
+}
+
+#b1-b2 > div {
+  width: 50%;
+}
+
+#b3-fb {
+  width: 30%;
+  height: 100%;
+}
+
+#b3-fb > div:first-of-type {
+  height: 70%;
+}
+
+#b3-fb > div:last-of-type {
+  height: 30%;
+}
+
+#oven {
   border: 2px solid rgb(197, 251, 126);
-  padding: 1px 26px;
-  text-align: center;
+  background-color: rgba(197, 251, 126, .5);
 }
 
-.Sink {
+#sink {
   border: 2px solid rgb(251, 251, 126);
-  padding: 1px 26px;
-  text-align: center;
+  background-color: rgba(251, 251, 126, .5);
+}
+
+#living-room,
+#bath-half,
+#bath-full {
+  border: 2px solid rgb(195, 218, 199);
+  background-color: rgba(195, 218, 199, .5);
 }
 
 #bed-1 {
   border: 2px solid rgb(251, 126, 161);
-  padding: 10px 26px;
-  text-align: center;
-  margin-top: 5px;
+  background-color: rgba(251, 126, 161, .5);
 }
-
 
 #bed-2 {
   border: 2px solid rgb(230, 144, 87);
-  padding: 10px 26px;
-  text-align: center;
-  margin-top: 5px;
+  background-color: rgba(230, 144, 87, .5);
 }
 
 #bed-3 {
   border: 2px solid rgb(71, 133, 45);
-  padding: 10px 26px;
-  text-align: center;
-  margin-top: 5px;
+  background-color: rgb(71, 133, 45, .5);
 }
 
-.LivingRoom {
-  border: 2px solid rgb(195, 218, 199);
-  padding: 10px 26px;
-  text-align: center;
-  margin-top: 5px;
-}
-
-#bath-Full {
-  border: 2px solid rgb(195, 218, 199);
-  padding: 10px 26px;
-  text-align: center;
-  margin-top: 5px;
-}
-
-#bath-Half {
-  display: flex;
-  position: relative;
-  border: 2px solid rgb(195, 218, 199);
-  padding: 10px 26px;
-  text-align: center;
-  margin-top: 5px;
-  width: 17%;
-  overflow-y: auto;
-  height: 26%;
-  position: fixed;
-  right: 5.2vw;
-  top: 14.5vh;
-  background-color: azure;
-  justify-content: center;
-  align-items: center;
+#closet-1 {
+  border: 2px solid rgb(71, 133, 45);
+  background-color: rgb(71, 133, 45, .5);
 }

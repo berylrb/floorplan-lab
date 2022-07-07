@@ -3,17 +3,17 @@ import Sink from "./Sink"
 
 
 const Kitchen = (props) => {
-  return (
-    <>
-      <div className="Kitchen">
-        <h3>Kitchen</h3>
-        <ul>
-          <Oven />
-          <Sink />
-        </ul>
-      </div>
-    </>
-  )
-}
+    return (
+      <>
+        <div id="kitchen" className="centered-flex">
+          <h3>Kitchen</h3>
+          <div id="kitchen-stuff">
+            <Oven />
+            <Sink />
+          </div>
+        </div>
+      </>
+    )
+  }
 
 export default Kitchen

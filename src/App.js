@@ -11,14 +11,24 @@ import Bath from './Bath';
 function App() {
 
   return (
-    <div className="App">
+    <div className="app">
+      <div id="k-hb" className="centered-flex">
         <Kitchen  />
         <Bath size="Half" />
-        <Bedroom bedNum={1} />
-        <Bedroom bedNum={2} />
-        <Bedroom bedNum={3} />
-        <Bath size="Full" />
-        <LivingRoom />
+      </div>
+      <div id="everything-else">
+        <div id="lr-b1-b2">
+          <LivingRoom />
+          <div id="b1-b2">
+            <Bedroom bedNum={1} />
+            <Bedroom bedNum={2} />
+          </div>
+        </div>
+        <div id="b3-fb">
+          <Bedroom bedNum={3} />
+          <Bath size="Full" />
+        </div>
+      </div>
     </div>
   );
 }

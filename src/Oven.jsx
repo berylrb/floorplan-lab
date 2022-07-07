@@ -1,7 +1,7 @@
 const Oven = (props) => {
   return (
     <>
-      <h4 className="Oven">Oven</h4>
+      <div id="oven" className="centered-flex">Oven</div>
     </>
   )
 }
